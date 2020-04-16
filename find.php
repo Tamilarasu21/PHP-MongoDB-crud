@@ -5,62 +5,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>find_user</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style type="text/css">
-		body
-		{
-			font-family:Verdana;
-			font-size:15px;
-		}
-		table
-		{
-			width:1500px;
-			text-align: center;
-			border-collapse: collapse;
-			margin-right: 10px;
-		}
-		th{
-			background:#adb9ed;
-		}
-		th,td
-		{
-			height:25px;
-			border:1px solid black;
-		}
-		.update
-		{
-			text-decoration: none;
-			background:#fccd4c;
-			color:#111111;
-			border-radius:3px;	
-		}
-		.update:hover
-		{
-			background:#fc8403;
-			color:#ffff;
-		}
-		.delete
-		{
-			text-decoration: none;
-			background:#f58282;
-			color:#111111;
-			border-radius:3px;	
-		}
-		.delete:hover
-		{
-			background:red;
-			color:#ffff;
-		}
-		.go-back
-		{
-			color:black;
-			background:#ffd787;
-			border-radius: 3px;
-			border:#ffd787;
-		}
-
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 <body>
 	<center>
+		<div class="disp">
 	<table>
 	<tr>
 		<th>Name</th>
@@ -73,14 +21,14 @@
 		<th>Task</th>
 	</tr>
 <?php 
-#database connectivity
-include "config.php";
+
+include "config.php";	#database connectivity
 
 if(isset($_GET['submit']))
 {
 	$keyword=$_GET['keyword'];
-	$query=new MongoDB\Driver\Query(['name'=>$keyword]);
-	$result=$client->executeQuery('sample.php_mongo_crud',$query);
+	$query=new MongoDB\Driver\Query(['name'=>$keyword]); 	#Query
+	$result=$client->executeQuery('sample.php_mongo_crud',$query);	#executing Query
 
  foreach ($result as $res) 
 	 	{ 
@@ -105,6 +53,7 @@ if(isset($_GET['submit']))
 }
  ?>
  </table>
+ </div>
  <button onclick="goBack()" class="go-back">Go Back</button>
 <script>
 function goBack() {

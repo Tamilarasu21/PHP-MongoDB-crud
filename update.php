@@ -4,7 +4,6 @@ $bulk=new MongoDB\Driver\BulkWrite;
 
 include "config.php";       #database connectivity
 
-
     $id    =$_POST['id'];
     $name=$_POST['name'];
     $empid=$_POST['empid'];
@@ -29,7 +28,7 @@ include "config.php";       #database connectivity
             ]); 
 
             $result = $client->executeBulkWrite('sample.php_mongo_crud',$bulk);   #executing query
-            header("Location:view.php"); 
+            header("Location:view.php");    #redirecting to view.php
         }
         catch(Exception $e)
         {

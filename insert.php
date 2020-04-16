@@ -1,6 +1,6 @@
 <?php
-#database connectivity
-include "config.php";
+
+include "config.php";   #database connectivity
 
 $bulk=new MongoDB\Driver\BulkWrite;     
 

@@ -1,0 +1,166 @@
+*
+{
+  margin:0;
+  padding:0;
+}
+body 
+{
+  background:white;
+  font: 17px/1.9 verdana,sans-serif;
+}
+.reg table
+{
+  width:400px;
+  border-collapse: collapse;
+  border:none;
+}
+.reg [type="date"]
+{
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  background-color: rgba(255,255,255,0.1);
+}
+.reg [type="date"]::-webkit-inner-spin-button 
+{
+  display: none;
+}
+.reg [type="date"]::-webkit-calendar-picker-indicator 
+{
+  opacity:0;
+} 
+.reg select
+{
+  width:180px;
+  border:1px solid black;
+  border-radius: 5px;
+  height:25px;
+}
+.reg select option
+{
+  background-color:rgba(255,255,255,.1); 
+  color:black;
+  border-radius:10px;
+}
+.reg input
+ {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 10px;
+  padding:3px 5px;
+}
+.reg th
+{
+  font-size: 30px;
+  color:blue;
+}
+.reg td
+{
+  padding:16px;
+  border:none
+}
+.reg td:nth-child(odd)
+{
+  width:100px;
+}
+.reg textarea
+{
+  padding:3px 5px;
+  width:180px;
+  border-radius: 5px;
+  border:1px solid black;
+  height:50px;
+}
+.reg [type=submit] 
+{
+    margin-top:19px;
+    width:230px;
+    background:lightgreen;
+    color:indigo;
+    border:1px solid lightgreen;
+}
+.reg [type=submit]:hover
+{
+    background:green;
+    color:snow;
+}
+.reg .search
+{
+    margin-top: 20px;
+    margin-right:60px;
+    padding:10px;
+}
+.reg .search #search
+{
+    margin-left: -12px;
+    border-radius: 50%;
+    width:23px;
+    height: 23px;
+    background: #adb9ed;
+    border:1px solid #adb9ed;
+    color:black;
+}
+.reg .search #search:hover
+{
+    background:navy;
+    border:1px solid navy;
+    color:snow;
+}
+.disp table
+{
+    width:1500px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-right: 10px;
+}
+.disp th
+{
+    background:#adb9ed;
+}
+.disp th,td
+{
+    height:25px;
+    border:1px solid black;
+}
+.disp .update
+{
+    text-decoration: none;
+    background:#fccd4c;
+    color:#111111;
+    border-radius:3px;	
+}
+.disp .update:hover
+{
+    background:#fc8403;
+    color:#ffff;
+}
+.disp .delete
+{
+    text-decoration: none;
+    background:#f58282;
+    color:#111111;
+    border-radius:3px;	
+}
+.disp .delete:hover
+{
+    background:red;
+    color:#ffff;
+}
+.disp .add-new
+{
+    text-decoration: none;
+    background:#28702c;
+    color:#ffffff;
+    border-radius: 5px;
+}
+.disp .add-new:hover
+{
+    background:#24ff30;
+    color:#111111;
+}
+.go-back
+{
+    color:black;
+    background:#ffd787;
+    border-radius: 3px;
+    border:#ffd787;
+}
