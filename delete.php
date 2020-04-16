@@ -1,6 +1,6 @@
 <?php
 $bulk=new MongoDB\Driver\BulkWrite;
-
+#database connectivity
 include "config.php";
 
 $id=$_GET['id'];
