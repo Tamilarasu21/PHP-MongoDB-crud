@@ -19,6 +19,7 @@ $shift=explode(",",$_GET['shift']);
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<title>edit_data</title>
+	<meta name="author" content="Tamilarasu">
 </head>
 <body>
 <div class="reg">
