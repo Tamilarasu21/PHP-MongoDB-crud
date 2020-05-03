@@ -1,7 +1,8 @@
 # php-mongoDB-crud
-PHP mongodb crud operations
+PHP MongoDB CRUD operations
 
         ->insert
+        ->view
         ->edit
         ->update
         ->delete
