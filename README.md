@@ -1,4 +1,3 @@
-# php-mongoDB-crud
 PHP MongoDB CRUD operations
 
         ->insert
