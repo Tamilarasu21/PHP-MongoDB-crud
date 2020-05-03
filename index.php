@@ -18,7 +18,7 @@
 	<button name="submit" id="search"><i class="fa fa-search"></i></button>
 	</form>
 	</div>
-		<!-- search -->
+	<!-- search -->
 <form method="post" action="insert.php" autocomplete="">
 	<table>
 		<tr><th colspan="2"><center>Register</center></th></tr>
