@@ -27,7 +27,7 @@ include "config.php";	#database connectivity
 if(isset($_GET['submit']))
 {
 	$keyword=$_GET['keyword'];
-	$query=new MongoDB\Driver\Query(['name'=>$keyword]); 	#Query
+	$query=new MongoDB\Driver\Query(['$or'=>[['name'=>$keyword],['gender'=>$keyword],['empid'=>$keyword],['email'=>$keyword],['shift'=>$keyword],['qualification'=>$keyword]]]); 	#Query
 	$result=$client->executeQuery('sample.php_mongo_crud',$query);	#executing Query
 
  foreach ($result as $res) 
